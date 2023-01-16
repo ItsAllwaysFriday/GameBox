@@ -1,3 +1,5 @@
+import java.io.CharArrayWriter;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 public class Hangman2_2 {
@@ -126,8 +128,8 @@ public class Hangman2_2 {
                     System.out.println(hLifePlayer1);
                     Letters = scanner.nextLine().charAt(0);
                     for (int i = 0; i < lengthString; i++) {
-                        if (Letters == input2.charAt(i)) {
-                            if (Letters == saved2.charAt(i) && htnbm2== false) {
+                        if (Letters == input2.charAt(i) && htnbm2== false) {
+                            if (Letters == saved2.charAt(i)) {
                                 System.out.println("You have already entered that letter");
                                 hScorePlayer1--;
                                 hLifePlayer1--;
