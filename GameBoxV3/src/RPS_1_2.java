@@ -10,6 +10,7 @@ public class RPS_1_2 {
         int rpsRunner = 1;
         int rpsPlayerInput ;
         int rpsPlayer2Input;
+
         while (rpsRunner == 1) {
             System.out.println("Choose how many rounds you want to play");
             System.out.println("Enter an odd number");
@@ -18,19 +19,55 @@ public class RPS_1_2 {
                 while (rpsRounds > 0) {
                     System.out.println("Enter: '1' for Rock, '2' for Paper, '3' for Scissors");
                     rpsPlayerInput = Integer.parseInt(scanner.nextLine());
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+                    System.out.println(" ");
+
+
+
+
                     if (rpsPlayerInput > 3 || rpsPlayerInput < 1 ) {
                         System.out.println("Wrong input. Error505. U STUPID! Try again cabron.");
                         System.out.println("Enter: '1' for Rock, '2' for Paper, '3' for Scissors");
                         rpsPlayerInput = Integer.parseInt(scanner.nextLine());
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        System.out.println(" ");
+
+
                     }
+
                     System.out.println("Enter: '1' for Rock, '2' for Paper, '3' for Scissors");
                     rpsPlayer2Input = Integer.parseInt(scanner.nextLine());
+
 
 
                     if (rpsPlayer2Input > 3 || rpsPlayer2Input < 1 ) {
                         System.out.println("Wrong input. Error505. U STUPID! Try again cabron.");
                         System.out.println("Enter: '1' for Rock, '2' for Paper, '3' for Scissors");
                         rpsPlayer2Input = Integer.parseInt(scanner.nextLine());
+
+
                     }
 
 

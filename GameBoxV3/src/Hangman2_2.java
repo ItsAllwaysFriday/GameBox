@@ -41,6 +41,7 @@ public class Hangman2_2 {
                     System.out.println();
                     x--;
                 }
+                x=20;
                 lengthString = input.length();
                 firstLetter = input.charAt(0);
                 lastLetter = input.charAt(lengthString - 1);
@@ -271,6 +272,7 @@ public class Hangman2_2 {
                     if (input.contentEquals(saved) || hLifePlayer2 == 0) {
                         end = true;
                     }
+
                 }
             }
             htnbm2 = false;
