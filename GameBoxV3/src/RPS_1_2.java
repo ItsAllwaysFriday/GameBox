@@ -12,6 +12,35 @@ public class RPS_1_2 {
         int rpsPlayer2Input;
 
         while (rpsRunner == 1) {
+            System.out.println("Player 1 choose nickname:");
+            String user = scanner.nextLine();
+
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println( "Hi "+ user);
+            System.out.println("Player 2 choose nickname:");
+            String user2 = scanner.nextLine();
+
+
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println(" ");
+
+            System.out.println( "Hi "+ user2);
+
             System.out.println("Choose how many rounds you want to play");
             System.out.println("Enter an odd number");
             rpsRounds = Integer.parseInt(scanner.nextLine());
@@ -76,54 +105,54 @@ public class RPS_1_2 {
 
                     if (rpsPlayerInput == 1 && rpsPlayer2Input == 1){
                         System.out.println("Looks like Player 2 also picked rock so it a DRAW");
-                        System.out.println("Player1: "+ rpsScorePlayer);
-                        System.out.println("Player2: "+rpsScorePlayer2);
+                        System.out.println(user + ": " +rpsScorePlayer);
+                        System.out.println(user2 + ": " +rpsScorePlayer2);
                     }
                     if (rpsPlayerInput == 1 && rpsPlayer2Input == 2){
                         System.out.println("Looks like Player 1 picked rock so Player 2 WINS");
                         rpsScorePlayer2++;
-                        System.out.println("Player1: "+ rpsScorePlayer);
-                        System.out.println("Player2: "+rpsScorePlayer2);
+                        System.out.println(user + ": " + rpsScorePlayer);
+                        System.out.println(user2 + ": " +rpsScorePlayer2);
                     }
                     if (rpsPlayerInput == 1 && rpsPlayer2Input == 3){
                         System.out.println("Looks like Player 2 picked scissors so Player 1 WINS");
                         rpsScorePlayer++;
-                        System.out.println("Player1: "+ rpsScorePlayer);
-                        System.out.println("Player2: "+rpsScorePlayer2);
+                        System.out.println(user + ": " + rpsScorePlayer);
+                        System.out.println(user2 + ": " +rpsScorePlayer2);
                     }
                     if (rpsPlayerInput == 2 && rpsPlayer2Input == 1){
                         System.out.println("Looks like Player 2 picked rock so Player 1 WINS");
                         rpsScorePlayer++;
-                        System.out.println("Player1: "+ rpsScorePlayer);
-                        System.out.println("Player2: "+rpsScorePlayer2);
+                        System.out.println(user + ": " + rpsScorePlayer);
+                        System.out.println(user2 + ": " +rpsScorePlayer2);
                     }
                     if (rpsPlayerInput == 2 && rpsPlayer2Input == 2) {
                         System.out.println("Looks like Player 2 also picked paper so it a DRAW");
-                        System.out.println("Player1: "+ rpsScorePlayer);
-                        System.out.println("Player2: "+rpsScorePlayer2);
+                        System.out.println(user + ": " + rpsScorePlayer);
+                        System.out.println(user2 + ": " +rpsScorePlayer2);
                     }
                     if (rpsPlayerInput == 2 && rpsPlayer2Input == 3) {
                         System.out.println("Looks like Player 1 picked paper so Player 2 WINS");
                         rpsScorePlayer2++;
-                        System.out.println("Player1: "+ rpsScorePlayer);
-                        System.out.println("Player2: "+rpsScorePlayer2);
+                        System.out.println(user + ": " + rpsScorePlayer);
+                        System.out.println(user2 + ": " +rpsScorePlayer2);
                     }
                     if (rpsPlayerInput == 3 && rpsPlayer2Input == 1) {
                         System.out.println("Looks like Player 1 picked scissors so Player 2 WINS");
                         rpsScorePlayer2++;
-                        System.out.println("Player1: "+ rpsScorePlayer);
-                        System.out.println("Player2: "+rpsScorePlayer2);
+                        System.out.println(user + ": " + rpsScorePlayer);
+                        System.out.println(user2 + ": " +rpsScorePlayer2);
                     }
                     if (rpsPlayerInput == 3 && rpsPlayer2Input== 2) {
                         System.out.println("Looks like Player 2 picked paper so Player 1 WINS");
                         rpsScorePlayer++;
-                        System.out.println("Player1: "+ rpsScorePlayer);
-                        System.out.println("Player2: "+rpsScorePlayer2);
+                        System.out.println(user + ": " + rpsScorePlayer);
+                        System.out.println(user2 + ": " +rpsScorePlayer2);
                     }
                     if (rpsPlayerInput == 3 && rpsPlayer2Input== 3) {
                         System.out.println("Looks like Player 2 also picked scissors so it a DRAW");
-                        System.out.println("Player1: "+ rpsScorePlayer);
-                        System.out.println("Player2: "+ rpsScorePlayer2);
+                        System.out.println(user + ": " + rpsScorePlayer);
+                        System.out.println(user2 + ": " +rpsScorePlayer2);
                     }
 
                     rpsRounds--;
