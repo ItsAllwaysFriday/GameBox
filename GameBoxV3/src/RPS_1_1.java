@@ -13,7 +13,11 @@ public class RPS_1_1 {
         int rpsRunner = 1;
         int rpsPlayerInput;
         int rpsCompInput;
-
+        String words = "Lady_Gaga:The_Rock:Angelina_Jolie:Brad_Pitt:Kylie_Jenner:Ryan_Reynolds:Gordan_Ramsay:Dr_Phil:Taylor_Swift:Shakira";
+        String[] wordsAsArray = words.split(":");
+        int index = new Random().nextInt(wordsAsArray.length);
+        String randomWord = wordsAsArray[index];
+        System.out.println("The enemy:" + randomWord);
 
 
         while (rpsRunner == 1) {
@@ -37,53 +41,53 @@ public class RPS_1_1 {
                     if (rpsPlayerInput == 1 && rpsCompInput == 0){
                         System.out.println("Looks like the computer also picked rock so it a DRAW");
                         System.out.println( user + ": " + rpsScorePlayer);
-                        System.out.println(rpsScoreComp);
+                        System.out.println(randomWord +":"+ rpsScoreComp);
                     }
                     if (rpsPlayerInput == 1 && rpsCompInput == 1){
                         System.out.println("Looks like the computer picked paper so you LOSE");
                         rpsScoreComp++;
                         System.out.println( user + ": " + rpsScorePlayer);
-                        System.out.println(rpsScoreComp);
+                        System.out.println(randomWord +":"+ rpsScoreComp);
                     }
                     if (rpsPlayerInput == 1 && rpsCompInput == 2){
                         System.out.println("Looks like the computer picked scissors so you WIN");
                         rpsScorePlayer++;
                         System.out.println( user + ": " + rpsScorePlayer);
-                        System.out.println(rpsScoreComp);
+                        System.out.println(randomWord +":"+ rpsScoreComp);
                     }
                     if (rpsPlayerInput == 2 && rpsCompInput == 0){
                         System.out.println("Looks like the computer picked rock so you WIN");
                         rpsScorePlayer++;
                         System.out.println( user + ": " + rpsScorePlayer);
-                        System.out.println(rpsScoreComp);
+                        System.out.println(randomWord +":"+ rpsScoreComp);
                     }
                     if (rpsPlayerInput == 2 && rpsCompInput == 1) {
                         System.out.println("Looks like the computer also picked paper so it a DRAW");
                         System.out.println( user + ": " + rpsScorePlayer);
-                        System.out.println(rpsScoreComp);
+                        System.out.println(randomWord +":"+ rpsScoreComp);
                     }
                     if (rpsPlayerInput == 2 && rpsCompInput == 2) {
                         System.out.println("Looks like the computer picked scissors so you LOSE");
                         rpsScoreComp++;
                         System.out.println( user + ": " + rpsScorePlayer);
-                        System.out.println(rpsScoreComp);
+                        System.out.println(randomWord +":"+ rpsScoreComp);
                     }
                     if (rpsPlayerInput == 3 && rpsCompInput == 0) {
                         System.out.println("Looks like the computer picked rock so you LOSE");
                         rpsScoreComp++;
                         System.out.println( user + ": " + rpsScorePlayer);
-                        System.out.println(rpsScoreComp);
+                        System.out.println(randomWord +":"+ rpsScoreComp);
                     }
                     if (rpsPlayerInput == 3 && rpsCompInput== 1) {
                         System.out.println("Looks like the computer picked paper so you WIN");
                         rpsScorePlayer++;
                         System.out.println( user + ": " + rpsScorePlayer);
-                        System.out.println(rpsScoreComp);
+                        System.out.println(randomWord +":"+ rpsScoreComp);
                     }
                     if (rpsPlayerInput == 3 && rpsCompInput== 2) {
                         System.out.println("Looks like the computer also picked scissors so it a DRAW");
                         System.out.println( user + ": " + rpsScorePlayer);
-                        System.out.println(rpsScoreComp);
+                        System.out.println(randomWord +":"+ rpsScoreComp);
                     }
 
                     rpsRounds--;

@@ -2,7 +2,8 @@ import java.io.CharArrayWriter;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-public class Hangman2_2 {
+public class
+Hangman2_2 {
     public Hangman2_2() {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
